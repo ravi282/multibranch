@@ -10,7 +10,7 @@ node('loan')
     }
     stage('ContinuousDeployment_loan')
     {
-        sh label: '', script: 'scp /var/lib/jenkins/workspace/multibranch/webapp/target/webapp.war ubuntu@172.31.44.150:/var/lib/tomcat7/webapps/qaenv.war'
+        sh label: '', script: 'scp /var/lib/jenkins/workspace/multibranch_loan/webapp/target/webapp.war ubuntu@172.31.44.150:/var/lib/tomcat7/webapps/qaenv.war'
     }
     
     
